@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Message</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>
+				<b>Your Message to "Example" Cafe:</b>
+			</legend>
+			<table style="width:40%;">
+				<tr>
+				<td>To:</td>
+				<td>
+					<input list="To">
+					<datalist id="To">
+						<option value="Owner">
+						<option value="Manager">
+						<option value="Receptionist">
+						<option value="Waiter">
+						<option value="Deliver">
+					</datalist>
+				</td>
+				</tr>
+				<tr>
+				<td>Your email</td>
+				<td><input type="email" name="mail"></td>
+				</tr>
+				<tr>
+					<td>Messsage</td>
+					<td style="height: 310px;">
+						<textarea style="width:440px;height:220px;margin-top: -35px;"></textarea>
+						<br>
+						<label id="FI">Attach File:</label>
+						<br>
+					<input type="file" name="files" id="FI">
+					<input type="submit" value="Send" onclick="alert('Are you sure do you want to submit the form?')">
+					</td>
+				</tr>
+				<tr>
+					<td>Payment Methold</td>
+					<td>
+						<input type="checkbox" name="1" id="1c">
+						<label id="1c">Cash</label>
+						<br>
+						<input type="checkbox" name="2" id="2c">
+						<label id="2c">Cheque</label>
+						<br>
+						<input type="checkbox" name="1" id="3c">
+						<label id="3c">KPay/WavePay</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend><b>How you found us:</b></legend>
+			<table>
+				<td>How did you hear of us</td>
+				<td>
+					<select>
+						<option value="google">Google</option>
+						<option value="local newspaper">Local newspaper ad</option>
+						<option value="firend">Friend</option>
+						<option value="other">Other</option>
+					</select>
+				</td>
+				<tr>
+				<td colspan="2">
+					<input type="checkbox" name="ENsure" checked="checked">
+					<label id="Ensure">Ensure this box is checked if you would like to receive email updates</label>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>
